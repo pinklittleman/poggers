@@ -43,7 +43,7 @@
   
   @keyframes scroll {
       0% { transform: translateX(0); }
-      100% { transform: translateX(calc(-25rem * 6))}
+      100% { transform: translateX(calc(-25rem * 2))}
   }
   ul {
     position: absolute;
