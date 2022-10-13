@@ -1,0 +1,99 @@
+@font-face {
+    font-family: myFirstFont;
+    src: url('Myriad Pro.ttf');
+  }
+  h1{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    top: 50px; 
+    font-size: 100px;
+    font-family: myFirstFont;
+    color:#d6d6d6;
+    text-align: center;
+    text-shadow: 0px 0px 35px rgb(0, 247, 255), 0px 0px 35px rgb(4, 0, 255), 0px 0px 15px rgb(59, 59, 59);
+  
+  }
+  body {
+    background-color: #1d1d1d;
+  }
+  ::-webkit-scrollbar {
+      width: 0px;
+      height: 0px;
+      background: transparent; /* make scrollbar transparent */
+  }
+  #container1{
+    display: flex;
+    position: absolute;
+    width: calc(100vw);
+    height: 15rem;
+    justify-content: center;
+    justify-self: center;
+    text-align: center;
+    left: 50%; 
+    transform: translateX(-50%);
+    background: #1d1d1d;
+    overflow-x: scroll;
+    scroll-snap-type: y mandatory;
+    -ms-overflow-style: none; 
+    scrollbar-width: none;  
+    white-space:nowrap;
+    box-shadow: 10px 10px 8px 10px #1d1d1d;
+  }
+  
+  @keyframes scroll {
+      0% { transform: translateX(0); }
+      100% { transform: translateX(calc(-25rem * 6))}
+  }
+  ul {
+    position: absolute;
+    height: 15rem;
+    bottom: 0;
+    left: 0;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    animation: scroll 8000ms linear infinite;
+    -ms-overflow-style: none;
+    scrollbar-width: none; 
+  }
+  li img{
+    width: 100%;
+  }
+  li iframe{
+    width: 100%;
+  }
+  #box1{
+    background-color: #1d1d1d;
+    width: 25rem;
+    display: flex;
+    justify-content: center;
+  }
+  #box2{
+    background-color: #1d1d1d ;
+    width: 25rem;
+    display: flex;
+    justify-content: center;
+  }
+  #box3{
+    background-color: #1d1d1d;
+    width: 25rem;
+    display: flex;
+    justify-content: center;
+  }
+  @media only screen and (max-width:500px) {
+    #box1, #box2, #box3{
+      width: 15rem;
+    }
+    @keyframes scroll {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(calc(-15rem * 6))}
+    }
+    h1{
+      font-size: 70px;
+    }
+    ul{
+      animation: scroll 10000ms linear infinite;
+    }
+  }
