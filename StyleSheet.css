@@ -88,7 +88,7 @@
     }
     @keyframes scroll {
     0% { transform: translateX(0); }
-    100% { transform: translateX(calc(-15rem * 6))}
+    100% { transform: translateX(calc(-15rem * 2))}
     }
     h1{
       font-size: 70px;
