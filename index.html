@@ -14,7 +14,6 @@
         <li id="box1">1</li>
         <li id="box2">2</li>
         <li id="box3">3</li>
-        <li id="box4">4</li>
       </ul>
     </div>
   </body>
@@ -38,6 +37,11 @@ h1{
 body {
   background-color: #1d1d1d;
 }
+::-webkit-scrollbar {
+    width: 0px;
+    height: 0px;
+    background: transparent; /* make scrollbar transparent */
+}
 #container1{
   display: flex;
   position: absolute;
@@ -48,23 +52,30 @@ body {
   text-align: center;
   left: 50%; 
   transform: translateX(-50%);
-  background: #d6d6d6;
+  background: rgb(0, 47, 255);
   overflow-x: scroll;
   scroll-snap-type: y mandatory;
-  /* -ms-overflow-style: none; 
-  scrollbar-width: none;   */
+  -ms-overflow-style: none; 
+  scrollbar-width: none;  
   white-space:nowrap;
+}
+
+@keyframes scroll {
+	0% { transform: translateX(0); }
+	100% { transform: translateX(calc(-416px * 1.5))}
 }
 ul {
   position: absolute;
   height: 15rem;
-  width: 100rem;
   bottom: 0;
   left: 0;
   list-style-type: none;
   margin: 0;
   padding: 0;
   display: flex;
+  animation: scroll 40s linear infinite;
+  -ms-overflow-style: none;
+  scrollbar-width: none; 
 }
 li {
   display: flex;
@@ -72,20 +83,17 @@ li {
 }
 #box1{
   background-color: rgb(0, 47, 255);
-  width: 50rem;
+  width: 26rem;
 }
 #box2{
   background-color:rgb(0, 255, 255) ;
-  width: 50rem;
+  width: 26rem;
 
 }
 #box3{
   background-color: rgb(128, 255, 0);
-  width: 50rem;
-}
-#box4{
-  background-color: rgb(255, 0, 255);
-  width: 50rem;
+  width: 26rem;
 }
 </style>
+https://freefrontend.com/css-carousels/
 </html>
