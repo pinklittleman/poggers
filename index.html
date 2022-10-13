@@ -88,10 +88,6 @@ ul {
   -ms-overflow-style: none;
   scrollbar-width: none; 
 }
-li {
-  display: flex;
-  scroll-snap-align: start;
-}
 li img{
   width: 100%;
 }
@@ -117,11 +113,18 @@ li iframe{
   justify-content: center;
 }
 @media only screen and (max-width:500px) {
+  @keyframes scroll {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(calc(-20rem * 6))}
+  }
   h1{
     font-size: 70px;
   }
   ul{
     animation: scroll 8000ms linear infinite;
+  }
+  li{
+    width: 20rem;
   }
 }
 </style>
