@@ -1,5 +1,5 @@
 @font-face {
-    font-family: myFirstFont;
+    font-family: Font1;
     src: url('Myriad Pro.ttf');
   }
   h1{
@@ -8,7 +8,7 @@
     justify-content: center;
     top: 50px; 
     font-size: 100px;
-    font-family: myFirstFont;
+    font-family: Font1;
     color:#d6d6d6;
     text-align: center;
     text-shadow: 0px 0px 35px rgb(0, 247, 255), 0px 0px 35px rgb(4, 0, 255), 0px 0px 15px rgb(59, 59, 59);
@@ -18,14 +18,14 @@
     background-color: #1d1d1d;
   }
   ::-webkit-scrollbar {
-      width: 0px;
-      height: 0px;
-      background: transparent; /* make scrollbar transparent */
+    width: 0px;
+    height: 0px;
+    background: transparent; /* make scrollbar transparent */
   }
   #container1{
     display: flex;
     position: absolute;
-    width: calc(100vw);
+    width: 100%;
     height: 15rem;
     justify-content: center;
     justify-self: center;
@@ -34,7 +34,6 @@
     transform: translateX(-50%);
     background: #1d1d1d;
     overflow-x: scroll;
-    scroll-snap-type: y mandatory;
     -ms-overflow-style: none; 
     scrollbar-width: none;  
     white-space:nowrap;
@@ -43,7 +42,7 @@
   
   @keyframes scroll {
       0% { transform: translateX(0); }
-      100% { transform: translateX(calc(-25rem * 2))}
+      100% { transform: translateX(calc(-200rem))}
   }
   ul {
     position: absolute;
@@ -54,16 +53,53 @@
     margin: 0;
     padding: 0;
     display: flex;
-    animation: scroll 8000ms linear infinite;
+    animation: scroll 25s linear infinite;
     -ms-overflow-style: none;
     scrollbar-width: none; 
   }
   li img{
-    width: 100%;
+    width: 60%;
   }
-  li iframe{
+  /* li p{
+    color: rgb(36, 167, 255);
+    position:relative;
+    font-family: Font1;
+    font-size: 40px;
     width: 100%;
+    text-align: left; 
+
+  } */
+  /* dl{
+    width: 100%;
+    left: 0px;
+    top: 0px;
+    position: relative;
+    top:100px;
   }
+  dl dt{
+    width: 100%;
+    position: relative;
+    left: -140px;
+    color: rgb(173, 173, 173);
+    font-weight:bold;
+    font-family: Font1;
+    font-size: 25px;
+  }
+  dl dd{
+    width:100%;
+    position: relative;
+    left: -140px;
+    color: rgb(173, 173, 173);
+    font-weight:bold;
+    font-family: Font1;
+    font-size: 20px;
+  }
+  .under{
+    width: 100%;
+    position: relative;
+    top: 50px;
+     
+  }*/
   #box1{
     background-color: #1d1d1d;
     width: 25rem;
@@ -72,12 +108,6 @@
   }
   #box2{
     background-color: #1d1d1d ;
-    width: 25rem;
-    display: flex;
-    justify-content: center;
-  }
-  #box3{
-    background-color: #1d1d1d;
     width: 25rem;
     display: flex;
     justify-content: center;
@@ -94,6 +124,6 @@
       font-size: 70px;
     }
     ul{
-      animation: scroll 10000ms linear infinite;
+      animation: scroll 2s linear infinite;
     }
   }
