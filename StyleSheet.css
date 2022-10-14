@@ -1,21 +1,169 @@
+#svg{
+  position: relative;
+  top: 450px;
+}
+
+.angry-grid {
+  display: grid; 
+
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  
+  gap: 10px;
+  height: 800px;
+
+  
+}
+ 
+#item-0 {
+  margin-top:10px ;
+  background-color: #D7D7D8; 
+  grid-row-start: 1;
+  grid-column-start: 1;
+
+  grid-row-end: 2;
+  grid-column-end: 3;
+  text-align: center;
+}
+#item-1 {
+
+  background-color: #6998AB; 
+  grid-row-start: 2;
+  grid-column-start: 1;
+
+  grid-row-end: 3;
+  grid-column-end: 3;
+  text-align: center;
+}
+#item-2 {
+
+  background-color: #AD8D59; 
+  grid-row-start: 3;
+  grid-column-start: 1;
+
+  grid-row-end: 4;
+  grid-column-end: 3;
+  text-align: center;
+}
+#item-3 {
+
+  background-color: #565ADF; 
+  grid-row-start: 3;
+  grid-column-start: 3;
+
+  grid-row-end: 4;
+  grid-column-end: 5;
+  text-align: center;
+}
+#item-4 {
+
+  background-color: #B8D77A; 
+  grid-row-start: 2;
+  grid-column-start: 3;
+
+  grid-row-end: 3;
+  grid-column-end: 5;
+  text-align: center;
+}
+#item-5 {
+  margin-top:10px ;
+  background-color: #9D96BD; 
+  grid-row-start: 1;
+  grid-column-start: 3;
+
+  grid-row-end: 2;
+  grid-column-end: 5;
+  text-align: center;
+}
+#item-6 {
+
+  background-color: #9DBC5B; 
+  grid-row-start: 4;
+  grid-column-start: 1;
+
+  grid-row-end: 5;
+  grid-column-end: 3;
+  text-align: center;
+}
+#item-7 {
+
+  background-color: #6B5DBB; 
+  grid-row-start: 4;
+  grid-column-start: 3;
+
+  grid-row-end: 5;
+  grid-column-end: 5;
+  text-align: center;
+  
+}
+
+.sec1{
+  background-color: #152238;
+  margin: 0;
+  height: 700px;
+  width:100%;
+  display: grid;  
+  place-items: center;
+  align-content: center;
+}
+
+.sec2{
+  background-color: #dfdfdf;
+  margin: 0;
+  height: 700px;
+  width:100%;
+  display: grid;  
+  place-items: center;
+  align-content: center;
+}
+
+.sec3{
+  background-color: #1c2e4a;
+  margin: 0;
+  height: 1700px;
+  width:100%;
+}
+
+.img1{
+  position: absolute;
+  height: 100px;
+  margin-top: -500px;
+}
+
+html{
+  margin: 0;
+}
+
+a{
+  font-size: 120px;
+  background: linear-gradient(97deg, #27bfda, #00ff15);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-decoration:none;
+}
+
+p{
+  font-family: Font1;
+  font-size: 50px;
+  text-shadow:5px 1px 10px rgb(20, 20, 20);
+}
+
 @font-face {
     font-family: Font1;
     src: url('Myriad Pro.ttf');
 }
-  h1{
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    top: 50px; 
-    font-size: 100px;
-    font-family: Font1;
-    color:#d6d6d6;
-    text-align: center;
-    text-shadow: 0px 0px 35px rgb(0, 247, 255), 0px 0px 35px rgb(4, 0, 255), 0px 0px 15px rgb(59, 59, 59);
+h1{
+  font-family: Font1;
+  font-size: 85px;
+  position: absolute;
+  text-align: center;
+  color: #e4e4e4;
+  text-shadow:5px 1px 10px rgba(211, 211, 211, 0.315);
   
 }
   body {
-    background-color: #1d1d1d;
+    background-color: #e4e4e4;
+    margin: 0;
 }
   ::-webkit-scrollbar {
     width: 0px;
