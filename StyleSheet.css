@@ -140,6 +140,7 @@ a{
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   text-decoration:none;
+  font-family: Font2;
 }
 
 p{
@@ -152,12 +153,16 @@ p{
     font-family: Font1;
     src: url('Myriad Pro.ttf');
 }
+@font-face {
+  font-family: Font2;
+  src: url('Myriad Pro Bold.ttf');
+}
 h1{
   font-family: Font1;
   font-size: 85px;
   position: absolute;
   text-align: center;
-  color: #e4e4e4;
+  color: whitesmoke;
   text-shadow:5px 1px 10px rgba(211, 211, 211, 0.315);
   
 }
