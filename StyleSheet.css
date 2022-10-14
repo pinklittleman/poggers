@@ -1,10 +1,12 @@
 #svg{
   position: relative;
   top: 450px;
+  /* background-color: #000000; */
 }
 
 .angry-grid {
   display: grid; 
+  justify-content: center;
 
   grid-template-rows: 1fr 1fr 1fr 1fr;
   grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -97,8 +99,15 @@
   
 }
 
+.BTEC1{
+  all: initial;
+  font-family: Font2;
+  font-size: 70px;
+  color: #c8ff00;
+}
+
 .sec1{
-  background-color: #152238;
+  background-color: #000000;
   margin: 0;
   height: 700px;
   width:100%;
@@ -108,9 +117,9 @@
 }
 
 .sec2{
-  background-color: #dfdfdf;
+  background-color: #150050;
   margin: 0;
-  height: 700px;
+  height: 1300px;
   width:100%;
   display: grid;  
   place-items: center;
@@ -118,7 +127,14 @@
 }
 
 .sec3{
-  background-color: #1c2e4a;
+  background-color: #3F0071;
+  margin: 0;
+  height: 1700px;
+  width:100%;
+}
+
+.sec4{
+  background-color: #610094;
   margin: 0;
   height: 1700px;
   width:100%;
