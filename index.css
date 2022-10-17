@@ -1,18 +1,15 @@
 body{
     margin: 0px;
-    background-color: burlywood;
+    background-color: rgb(255, 80, 80);
     overflow-x: hidden;
 }
 
 @keyframes gradient {
     0% {
-        background-position: 0% 0%;
-    }
-    50% {
-        background-position: 100% 50%;
+        background-position: 0% ,0%;
     }
     100% {
-        background-position: 0% 0%;
+        background-position: 100%, 100%;
     }
 }
 
@@ -21,9 +18,10 @@ body{
     background-color: rgb(252, 255, 89);
     width: 100%;
     height: 1080px;
-    background: linear-gradient(45deg, rgb(252, 255, 89), #e73c7e, rgb(252, 255, 89), #23d5b7);
-    background-size: 800% 800%;
-    animation: gradient 20s ease infinite;
+    background: linear-gradient(90deg, #fcff59, #ffa41c, #ff3030, #c815ff,#1c3eff, #fcff59, #ffa41c, #ff3030);
+    background-size: 600% 600%;
+    animation: gradient ease-in-out infinite;
+    animation-duration: 20s;
 }
 .sec2{
     margin: inherit;
@@ -63,7 +61,7 @@ body{
     margin: inherit;
     background-color: rgb(255, 80, 80);
     width: 100%;
-    height: 1080px;
+    height: 9880px;
     margin: 0;
 }
 .secret3{
@@ -82,6 +80,15 @@ body{
     font-size: 170px;
     text-align: center;
     padding-top: 250px;
+}
+.turn{
+    margin: inherit;
+    font-family: Font1;
+    font-size: 170px;
+    text-align: center;
+    padding-top: 250px;
+    position: relative;
+    bottom: -2200px;
 }
 #main2{
     margin: inherit;
@@ -224,6 +231,26 @@ body{
     text-decoration: none;
     text-shadow: 0px 0px 10px #242424;
 }
+.video{
+    margin: 0;
+    height: 0;
+}
+video{
+    width: 100%;
+
+}
+.main42{
+    font-family:Font1 ;
+    position: relative;
+    text-align: center;
+    bottom: -350px;
+    font-size: 90px;
+    background: linear-gradient(90deg, #e2e2e2, #7a7a7a);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+    margin: 0;
+}
+
 @keyframes blink {
     0%{opacity: 0;}
     50%{opacity: 1;}
