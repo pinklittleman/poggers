@@ -7,14 +7,14 @@ body{
     margin: inherit;
     background-color: rgb(252, 255, 89);
     width: 100%;
-    height: 926px;
+    height: 1080px;
 
 }
 .sec2{
     margin: inherit;
     background-color: rgb(255, 197, 89);
     width: 100%;
-    height: 926px;
+    height: 1280px;
 }
 .secret{
     width: 100%;
@@ -31,7 +31,7 @@ body{
     grid-template-rows:1fr 1fr 1fr 1fr;
     justify-content: center;
     gap: 10px;
-    height: 926px;
+    height: 1180px;
 }
 .secret2{
     width: 100%;
@@ -40,14 +40,26 @@ body{
 }
 .sec4{
     margin: inherit;
-    background-color: rgb(255, 100, 89);
+    background-color: rgb(255, 85, 73);
     width: 100%;
-    height: 926px;
+    height: 1100px;
+}
+.sec5{
+    margin: inherit;
+    background-color: rgb(255, 80, 80);
+    width: 100%;
+    height: 1080px;
+    margin: 0;
 }
 .secret3{
     width: 100%;
     height: 10px;
     background: linear-gradient(180deg,rgb(255, 142, 89), rgb(255, 100, 89));
+}
+.secret4{
+    width: 100%;
+    height: 10px;
+    background: linear-gradient(180deg,rgb(255, 85, 73),rgb(255, 80, 80));
 }
 .main1{
     margin: inherit;
@@ -69,6 +81,13 @@ body{
     text-align: center;
     padding-top: 50px;
 }
+.main4{
+    margin: inherit;
+    font-family: Font1;
+    font-size: 170px;
+    text-align: center;
+    padding-top: 50px;
+}
 .containing{
     position: relative;
     top: 150px;
@@ -84,13 +103,23 @@ body{
     width: calc(3 * 150px);
     text-align: center;
 }
+.Carousel2 .Block{
+    animation: carousel 9s linear infinite;
+    display: flex;
+    flex-wrap: nowrap;
+    width: calc(3 * 150px);
+    text-align: center;
+}
+
 .Block{
     flex-shrink: 0;
     padding-right: 400px;
     width: 150px;
 }
 .containing img{
-    box-shadow: 0px 0px 15px 2px #ffd415;
+    height: 240px;
+    width: 240px;
+    box-shadow: 0px 0px 25px 2px #ffd415;
 }
 @keyframes carousel{
     0%   { transform: translate3d(0, 0, 0); }
@@ -156,28 +185,29 @@ body{
     background-color:#969696 ;
 }
 #item-6{
-    background-color:#fffb00 ;
+    background-color:#ffde20 ;
 }
 #item-7{
     background-color:#dd7600 ;
 }
 #lefunny{
-    font-size: 30px;
+    font-size: 10px;
     list-style-type: none;
 }
 .sec3 div{
-    font-family: Font4;
+    font-family: Font1;
     font-size: 40px;
     text-align: center;
-    text-decoration: underline;
+    text-decoration: none;
 }
 .sec3 p{
     margin: 10px;
-    font-family: Font5;
+    font-family: Font4;
     font-size: 45px;
     text-align: center;
-    color: #161616;
+    color: #ffffff;
     text-decoration: none;
+    text-shadow: 0px 0px 10px #242424;
 }
 @keyframes blink {
     0%{opacity: 0;}
