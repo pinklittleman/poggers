@@ -24,7 +24,7 @@ body{
     background: linear-gradient(90deg, #fcff59, #ffa41c, #ff3030, #c815ff,#1c3eff, #fcff59, #ffa41c, #ff3030);
     background-size: 600% 600%;
     animation: gradient ease-in-out infinite;
-    animation-duration: 20s;
+    animation-duration: 30s;
 }
 .sec2{
     margin: inherit;
