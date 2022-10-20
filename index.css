@@ -47,7 +47,6 @@ a{
     margin: inherit;
     background-color: #221f22;
     width: 100%;
-    height: 926px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows:1fr 1fr 1fr 1fr;
