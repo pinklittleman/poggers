@@ -15,7 +15,13 @@ body{
         background-position: 0%, 0%;
     }
 }
-
+a{
+    text-decoration: none;
+}
+.mian6{
+    font-family: Font1;
+    font-size: 50px;
+}
 .sec1{
     margin: inherit;
     background-color: rgb(252, 255, 89);
